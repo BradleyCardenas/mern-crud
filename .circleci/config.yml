@@ -2,9 +2,8 @@ version: 1.0
 
 jobs: 
   nombreJobPrueba:
-    executor: 
-      docker: 
-        - image: cimg/node:14.13.0
+    docker: 
+      - image: cimg/node:14.13.0
     steps: 
       - checkout
       - run: node --version
