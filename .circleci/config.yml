@@ -1,9 +1,4 @@
-version 1.0
-
-workflows: 
-  flujoDeTrabajoEjemplo: 
-    jobs:
-      - nombreJobPrueba
+version: 1.0
 
 jobs: 
   nombreJobPrueba:
@@ -15,3 +10,7 @@ jobs:
       - run: node --version
         
 
+workflows: 
+  flujoDeTrabajoEjemplo: 
+    jobs:
+      - nombreJobPrueba
