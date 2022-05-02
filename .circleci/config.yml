@@ -1,0 +1,15 @@
+version 1.0
+#listado de 
+jobs: 
+  nombreJobPrueba:
+    executor: 
+      docker: 
+        - image: cimg/node:7.0
+    steps: 
+      - checkout
+      - run: node --version
+        
+workflows: 
+  flujoDeTrabajoEjemplo: 
+    jobs:
+      - nombreJob
