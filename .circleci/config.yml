@@ -1,5 +1,10 @@
 version 1.0
 
+workflows: 
+  flujoDeTrabajoEjemplo: 
+    jobs:
+      - nombreJobPrueba
+
 jobs: 
   nombreJobPrueba:
     executor: 
@@ -9,7 +14,4 @@ jobs:
       - checkout
       - run: node --version
         
-workflows: 
-  flujoDeTrabajoEjemplo: 
-    jobs:
-      - nombreJob
+
